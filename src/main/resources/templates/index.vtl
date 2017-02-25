@@ -1,0 +1,71 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farnoosh Salon</title>
+</head>
+
+<body>
+  <div class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Java Cut</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="https://farnoosh63.github.io/portfolio/">About me</a></li>
+              <li><a href="mailto:farnoosh@pdx.edu">Contact me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <img src="http://beautynewsindia.com/wp-content/uploads/2015/10/BNI-strong-hair.jpg">
+  </div>
+
+  <div class="container">
+    <h2>Java Cut and Spa</h2>
+    <p>Welcome to The Java Cut Hair Salon Portland, OR- A full service salon offering full database of haircuts, color, highlites, lowlites, corrective color &amp; color treatments with Java Techniques. We carry only professional hair products and sell several product lines. We also showcase local artists and support Java programmers in the community. Come take a tour of The Java Cut and see what makes us the Best Salon in between Java Programmers! We hope to see you soon..</p>
+    <form action="/stylists" method="post">
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="stylist-name">Please type the Stylist name</label>
+          <input id="stylist-name" name="stylist-name" type="text" class="form-control" placeholder="Enter your stylist name" required>
+        </div>
+        <button type="submit" class="btn btn-success">Add stylist</button>
+      </div>
+    </form>
+
+    <div class="form-inline">
+      #if($stylists)
+        <h3>Click on a stylist to see its Clients:</h3>
+        <ul>
+          #foreach($stylist in $stylists)
+            <li><a href="/stylists/$stylist.getId() ">$stylist.getName()</a></li>
+          #end
+        </ul>
+      #end
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Farnoosh Johnson Code Review3, Java class @
+        <a href="http://www.epicodus.com/">epicodus</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
