@@ -1,6 +1,6 @@
 # Hair-Salon
 
-#By Alice Maina
+By Alice Maina
 #Description
 
 a practice in java, gradle, sparkJava, postresql, junit, and fluentlenium.
