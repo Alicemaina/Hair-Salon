@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClientTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-02-27T07:17:06" hostname="alice-HP-EliteBook-8460p" time="0.198">
+  <properties/>
+  <testcase name="getId_categoriesInstiateWithAnId_1" classname="ClientTest" time="0.056"/>
+  <testcase name="client_getClientName_String" classname="ClientTest" time="0.009"/>
+  <testcase name="delete_deletesClients_true" classname="ClientTest" time="0.072"/>
+  <testcase name="client_saveClientNametoList_true" classname="ClientTest" time="0.058"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

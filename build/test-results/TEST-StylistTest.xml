@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StylistTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-02-27T07:17:06" hostname="alice-HP-EliteBook-8460p" time="0.573">
+  <properties/>
+  <testcase name="equals_returnsTrueIfNamesAretheSame" classname="StylistTest" time="0.341"/>
+  <testcase name="save_returnTrueIfNameAretheSame" classname="StylistTest" time="0.118"/>
+  <testcase name="find_returnsStylistSameId_secondStylist" classname="StylistTest" time="0.057"/>
+  <testcase name="delete_deletesStylist_true" classname="StylistTest" time="0.053"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
