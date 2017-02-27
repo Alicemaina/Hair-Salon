@@ -36,20 +36,15 @@ public class Stylist {
 	}
 
 	public static List<Stylist> all() {
-<<<<<<< HEAD
     try (Connection con = DB.sql2o.open()) {
     String sql = "SELECT * FROM stylists";
-=======
-    String sql = "SELECT * FROM stylists";
-    try (Connection con = DB.sql2o.open()) {
->>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
       return con.createQuery(sql).executeAndFetch(Stylist.class);
     }
   }
 
 	 public List<Client> getClient() {
 	 	try(Connection con = DB.sql2o.open()) {
-	 		String sql = "SELECT * FROM client WHERE stylistId=:id";
+	 		String sql = "SELECT * FROM clients WHERE stylistId=:id";
 	 		return con.createQuery(sql)
 	 		.addParameter("id", this.id)
 	 		.executeAndFetch(Client.class);
@@ -79,16 +74,21 @@ public class Stylist {
 
   public void delete() {
   	try(Connection con = DB.sql2o.open()) {
-<<<<<<< HEAD
   		String sql = "DELETE FROM stylists WHERE id =:id";
-=======
-  		String sql = "DELETE FROM stylists WHERE id =: id";
->>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
   		con.createQuery(sql)
   		.addParameter("id", id)
   		.executeUpdate();
     }
   }
+
+ //  public List<Client> getClient() {
+	// 	try(Connection con = DB.sql2o.open()) {
+	// 		String sql = "SELECT * FROM clients WHERE stylist_id=:id";
+	// 		return con.createQuery(sql)
+	// 		.addParameter("id", this.id)
+	// 		.executeAndFetch(Client.class);
+	// 	}
+	// }
 
 
 }

@@ -8,31 +8,21 @@ public class ClientTest {
   public DatabaseRule database = new DatabaseRule();
   
 @Test
-  public void client_getClientName_String() {
-<<<<<<< HEAD
-  	Client firstClient =  new Client("Client Jane", 1);
-  	Client secondClient = new Client("Client Jane", 1);
-=======
-  	Client firstClient =  new Client("Client Jane");
-  	Client secondClient = new Client("Client Jane");
->>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
-  	assertTrue(firstClient.equals(secondClient));
+   public void client_getClientName_String() {
+    Client firstClient =  new Client("Client Jane", 1);
+    Client secondClient = new Client("Client Jane", 1);
+    assertTrue(firstClient.equals(secondClient));
 
   }
 
   @Test
   public void client_saveClientNametoList_true() {
-<<<<<<< HEAD
     Stylist myStylist  = new Stylist("Stylist");
     myStylist.save();
     Client myClient = new Client("Client Jane", myStylist.getId());
     myClient.save();
     assertEquals(Client.all().get(0), myStylist);
-=======
-    Client myClient = new Client("Client Jane");
-    myClient.save();
-    assertTrue(Client.all().get(0).equals(myClient));
->>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
+
   }
 
   //  @Test
@@ -47,28 +37,19 @@ public class ClientTest {
 
   @Test
   public void getId_categoriesInstiateWithAnId_1() {
-<<<<<<< HEAD
-  	    Stylist myStylist  = new Stylist("Stylist");
+  	Stylist myStylist  = new Stylist("Stylist");
     myStylist.save();
     Client myClient = new Client("Client Jane", myStylist.getId());
     myClient.save();
   	assertTrue(myClient.getId() > 0);
-=======
-  	Client testClient = new Client("Client Jane");
-  	testClient.save();
-  	assertTrue(testClient.getId() > 0);
->>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
+
   }
 
   @Test
   public void delete_deletesClients_true() {
-<<<<<<< HEAD
-  	    Stylist myStylist  = new Stylist("Stylist");
+  	Stylist myStylist  = new Stylist("Stylist");
     myStylist.save();
     Client myClient = new Client("Client Jane", myStylist.getId());
-=======
-  	Client myClient = new Client("Client Jane");
->>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
     myClient.save();
     int myClientId = myClient.getId();
     myClient.delete();
