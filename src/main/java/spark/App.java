@@ -6,6 +6,7 @@ import static spark.Spark.*;
 public class App {
   public static void main(String[] args) {
 
+<<<<<<< HEAD
     // ProcessBuilder process = new ProcessBuilder();
     // Integer port;
     // if (process.environment().get("PORT") != null) {
@@ -15,6 +16,17 @@ public class App {
     // }
 
     // setPort(port);
+=======
+    ProcessBuilder process = new ProcessBuilder();
+    Integer port;
+    if (process.environment().get("PORT") != null) {
+      port = Integer.parseInt(process.environment().get("PORT"));
+    } else {
+      port = 4567;
+    }
+
+    setPort(port);
+>>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
 
 
     staticFileLocation("/public");
@@ -29,7 +41,11 @@ public class App {
 
     post("/stylists", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
+<<<<<<< HEAD
       String stylistName = request.queryParams("stylistname");
+=======
+      String stylistName = request.queryParams("stylist-name");
+>>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
       Stylist newStylist = new Stylist(stylistName);
       newStylist.save();
       response.redirect("/");
@@ -48,7 +64,11 @@ public class App {
 
      post("/clients", (request,response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
+<<<<<<< HEAD
       String clientName = request.queryParams("client name");
+=======
+      String clientName = request.queryParams("client-name");
+>>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
       Stylist stylist = Stylist.find(Integer.parseInt(request.queryParams("stylistId")));
       Client newClient = new Client(clientName, stylist.getId());
       newClient.save();

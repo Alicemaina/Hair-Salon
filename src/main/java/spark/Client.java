@@ -13,7 +13,11 @@ public class Client {
 
 
 
+<<<<<<< HEAD
 	public Client(String name, int stylistId) {
+=======
+	public Client(String name) {
+>>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
 		this.name = name;
 		this.stylistId = stylistId;
 		this.clientId = clientId;

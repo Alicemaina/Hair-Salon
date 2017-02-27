@@ -1,7 +1,11 @@
 # Hair-Salon
 
 By Alice Maina
+<<<<<<< HEAD
 Description
+=======
+#Description
+>>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
 
 a practice in java, gradle, sparkJava, postresql, junit, and fluentlenium.
 Setup/Installation Requirement
@@ -37,8 +41,11 @@ $ gradle run
     Open localhost:4567 in a browser.
 
 Known Bugs
+<<<<<<< HEAD
 
 No current known bugs.
+=======
+>>>>>>> ce44c89af7a326666c57c5cbd788c446219eb77b
 Support and contact details
 
 To contact, leave a comment on Github.
