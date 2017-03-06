@@ -46,7 +46,7 @@
       #if($stylists)
       <ul>
         #foreach($stylist in $stylists)
-        <li><a href="/stylists/$stylist.getId() ">$stylist.getName()</a></li>
+        <li><a href="/stylists/$stylist.getId() "> name</a></li>
         <form action="/stylists/$stylist.getId()/delete" method="post">
           <button type="submit" class="btn btn-default">Delete Stylist</button>
         </form>
@@ -58,9 +58,8 @@
   </div>
   <footer class="footer">
     <div class="container">
-      <p class="text-muted">Alice Moringa@
-
-      </p>
+      <!-- <p class="text-muted">Alice Moringa@
+      </p> -->
     </div>
   </footer>
 

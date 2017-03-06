@@ -1,3 +1,11 @@
+body {
+  background-image: url("http://ae0f9af9d5997e1e1985-d9593e6563fa6f08db8db49505a98980.r20.cf1.rackcdn.com/responsive/580/ae0f9af9d5997e1e1985-d9593e6563fa6f08db8db49505a98980.r20.cf1.rackcdn.com/lps/assets/u/WI-spa-banner.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-decoration-color: 
+}
 .container {
   text-align: center;
   vertical-align: middle;
@@ -16,14 +24,15 @@ footer {
   color: #777;
 }
 
-body {
+/*body {
   margin: 0;
   display: block;
   margin-bottom: 60px;
   line-height: 200%;
-}
+}*/
 img {
   display: block;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,4 +42,11 @@ img {
 
 ul {
   list-style: none;
+}
+hi,h2,p {
+  color: #EE9A00;
+}
+#form-inline {
+  color: black;
+  font-size: 20px;
 }

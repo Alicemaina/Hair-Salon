@@ -54,12 +54,12 @@
       </div>
     </form>
 
-    <div class="form-inline">
+    <div class="container" id="form-inline">
       #if($stylists)
         <h3>Click on a stylist to see its Clients:</h3>
         <ul>
           #foreach($stylist in $stylists)
-            <li><a href="/stylists/$stylist.getId() ">$stylist.getName()</a></li>
+            <li><a href="/stylists/$stylist.getId() ">Name()</a></li>
           #end
         </ul>
       #end
@@ -68,11 +68,7 @@
 
   <footer class="footer">
     <div class="container">
-
-      <p class="text-muted">Alice Moringa@ 
-       
-
-      </p>
+     <!--  <p class="text-muted">Alice Moringa@ </p> -->
     </div>
   </footer>
 

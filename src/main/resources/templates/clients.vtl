@@ -39,15 +39,15 @@
   </div>
 
   <div class="container">
-    <h2>Java Cut and Spa</h2>
-    <p>Java cut and Spa was rated by Vogue Magazine as one of the Top 100 Salons in the nation!</p>
+    <h2>Cut and Spa</h2>
+    <p>Cut and Spa was rated by Vogue Magazine as one of the Top 100 Salons in the nation!</p>
     <p>We are recognized for our passion, and our commitment to sense and style. Like Portland, we’re friendly, have our unique charm, and cater to each individual clients where they are at.Please add the client name so we can track of each stylist easier.</p>
 
     <form action="/clients" method="post">
       <div class="form-inline">
         <input id="stylistId" name="stylistId" type="hidden" value="$stylist.getId()">
         <div class="form-group">
-          <label for="client-name">$stylist.getName()'s Client'</label>
+          <label for="client-name">Client'</label>
           <input id="client-name" name="client-name" type="text" class="form-control">
         </div>
       </div>
@@ -55,22 +55,19 @@
     </div>
   </form>
   <div class="form-inline">
-    <p><Strong> list of $stylist.getName() Clients: </strong></p>
+    <p><Strong> list of Clients: </strong></p>
     #foreach ($client in $clients)
     <ul>
-      <li>$client.getName()</a></li>
+      <li>Client Name</a></li>
       <a href="/clients/$client.getId()" class="btn btn-link">Update Client Name</a>
     </ul>
     #end
 
     <a type="button" href="/stylists" class="btn btn-warning">Manage Stylist list</a>
   </div>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
-
-      <p class="text-muted">Alice, Moringa@
-
-      </p>
+      <p class="text-muted">Alice, Moringa@</p>
     </div>
-  </footer>
+  </footer> -->
 </body>

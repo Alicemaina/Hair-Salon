@@ -47,7 +47,7 @@
       <div class="form-inline">
         <input id="stylistId" name="stylistId" type="hidden" value="$stylist.getId()">
         <div class="form-group">
-          <label for="client-name">$stylist.getName()'s Client'</label>
+          <label for="client-name">Client'</label>
           <input id="client-name" name="client-name" type="text" class="form-control">
         </div>
       </div>
@@ -58,7 +58,7 @@
     <p><Strong> list of $stylist.getName() Clients: </strong></p>
     #foreach ($client in $clients)
     <ul>
-      <li>$client.getName()</a></li>
+      <li>Client Name()</a></li>
       <a href="/clients/$client.getId()" class="btn btn-link">Update Client Name</a>
     </ul>
     #end
@@ -67,10 +67,7 @@
   </div>
   <footer class="footer">
     <div class="container">
-
-      <p class="text-muted">Alice, Moringa@
-
-      </p>
+      <!-- <p class="text-muted">Alice, Moringa@</p> -->
     </div>
   </footer>
 </body>
